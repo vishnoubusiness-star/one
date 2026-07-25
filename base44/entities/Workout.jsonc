@@ -1,0 +1,44 @@
+{
+  "name": "Workout",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "college": {
+      "type": "string",
+      "default": "Georgia Tech"
+    },
+    "exercise": {
+      "type": "string"
+    },
+    "sets_data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "weight_kg": {
+            "type": "number"
+          },
+          "reps": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_id",
+    "exercise"
+  ]
+}
