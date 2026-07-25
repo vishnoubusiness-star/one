@@ -1,1 +1,27 @@
-
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "badge_code": {
+      "type": "string"
+    },
+    "badge_name": {
+      "type": "string"
+    },
+    "badge_icon": {
+      "type": "string"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_id",
+    "badge_code",
+    "badge_name"
+  ]
+}
