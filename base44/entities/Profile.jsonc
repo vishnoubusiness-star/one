@@ -1,0 +1,61 @@
+{
+  "name": "Profile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "Reference to the User entity id"
+    },
+    "username": {
+      "type": "string",
+      "description": "Unique handle"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "major": {
+      "type": "string"
+    },
+    "graduation_year": {
+      "type": "integer"
+    },
+    "height_cm": {
+      "type": "number"
+    },
+    "weight_kg": {
+      "type": "number"
+    },
+    "sex": {
+      "type": "string",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "bio": {
+      "type": "string"
+    },
+    "profile_photo_url": {
+      "type": "string"
+    },
+    "college": {
+      "type": "string",
+      "default": "Georgia Tech"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "streak": {
+      "type": "integer",
+      "default": 0
+    },
+    "goal_total_kg": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_id",
+    "username"
+  ]
+}
