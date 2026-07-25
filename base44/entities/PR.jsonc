@@ -1,0 +1,59 @@
+{
+  "name": "PR",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "full_name": {
+      "type": "string"
+    },
+    "profile_photo_url": {
+      "type": "string"
+    },
+    "college": {
+      "type": "string",
+      "default": "Georgia Tech"
+    },
+    "lift_type": {
+      "type": "string",
+      "enum": [
+        "Bench Press",
+        "Squat",
+        "Deadlift",
+        "OHP",
+        "Incline Bench",
+        "Row",
+        "Pull-ups",
+        "Weighted Pull-ups",
+        "Power Clean",
+        "Front Squat"
+      ]
+    },
+    "weight_kg": {
+      "type": "number"
+    },
+    "reps": {
+      "type": "integer",
+      "default": 1
+    },
+    "estimated_1rm": {
+      "type": "number"
+    },
+    "bodyweight_kg": {
+      "type": "number"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_id",
+    "lift_type",
+    "weight_kg"
+  ]
+}
